@@ -16,8 +16,16 @@ class App extends Component {
   }
 
   // selectEmployee
+  selectEmployee(employee) {
+    this.setState({
+      selected: employee
+    })
+  }
 
   // refresh
+  refresh() {
+    this.setState(this.state);
+  }
 
   render() {
     return (
